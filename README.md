@@ -15,7 +15,7 @@ own **Store** tab, like anything else.
 Copy this address:
 
 ```
-https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/plugins.json
+https://rayekkk.github.io/RayekDeckyStore/plugins.json
 ```
 
 On the device, open **Decky → Settings → General → Store channel**, switch it to **Custom**,
@@ -115,6 +115,9 @@ result. **The address never changes.**
 python build_store.py
 git commit -am "Refresh the store" && git push
 ```
+
+The file is served by GitHub Pages from `main`, so a push takes a minute or so to appear at
+the address above.
 
 Three details the file has to get right, all handled by the generator:
 

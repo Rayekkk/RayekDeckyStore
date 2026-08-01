@@ -15,7 +15,7 @@ own **Store** tab, like anything else.
 Copy this address:
 
 ```
-https://rayekkk.github.io/RayekDeckyStore/plugins.json
+https://decky.rayek.workers.dev
 ```
 
 On the device, open **Decky → Settings → General → Store channel**, switch it to **Custom**,
@@ -116,8 +116,18 @@ python build_store.py
 git commit -am "Refresh the store" && git push
 ```
 
-The file is served by GitHub Pages from `main`, so a push takes a minute or so to appear at
-the address above.
+The file is served by GitHub Pages from `main`, and `worker.js` fronts it at the address
+above. A push takes a minute or so to appear.
+
+The worker exists for one reason. Decky adds an `X-Decky-Version` header, which makes the
+request non-simple, so the browser sends a `OPTIONS` preflight first and only issues the real
+`GET` if the answer names that header. **No static host answers it:** GitHub Pages replies
+405, `raw.githubusercontent` 403, and jsDelivr replies 200 but without
+`Access-Control-Allow-Headers`, which the browser rejects just the same. A blocked request
+leaves the store spinning forever rather than showing an error, because `Store.tsx` has no
+`catch` around the fetch.
+
+The worker never needs redeploying. It reads whatever `plugins.json` currently says.
 
 Three details the file has to get right, all handled by the generator:
 

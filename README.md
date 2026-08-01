@@ -64,7 +64,7 @@ patterns, a touchpad motor set apart from the handles, and per-game profiles.
 
 ---
 
-## Brightness
+## SteamOS Brightness Fix
 
 <div align="center">
 
@@ -83,7 +83,7 @@ and stand down whenever they are not needed.
 
 ---
 
-## Colour
+## Display Vibrancy
 
 <div align="center">
 

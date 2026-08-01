@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "LeGoTDP",
+    "author": "Rayek",
+    "description": "Set AMD CPU TDP limits directly from the Steam overlay on the Lenovo Legion Go 2 and Legion Go S. Preset ladders spaced against each machine's own firmware ceilings, custom sliders, per-game profiles with separate battery and charging limits, and live power draw read from RAPL.",
+    "tags": [
+      "utilities",
+      "hardware",
+      "performance"
+    ],
+    "image_url": "",
+    "versions": [
+      {
+        "name": "1.6.0",
+        "hash": "4b04b2e1bb980b312eb482f7a6da8af3c5cbcb7124b4d3c4322ba7cea9b8a805",
+        "artifact": "https://github.com/Rayekkk/LeGoTDP/releases/download/1.6.0/LeGoTDP-1.6.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "LeGo Vibe Control",
+    "author": "Rayek",
+    "description": "Control vibration intensity and mode on the Lenovo Legion Go and Legion Go 2. Five rumble patterns, per-game profiles, and touchpad haptics. Uses the hid-lenovo-go kernel driver (Kernel 6.18+ / SteamOS 3.8+) and persists settings across reboots. The Legion Go S is not supported: its driver does not expose vibration control.",
+    "tags": [
+      "utilities",
+      "hardware",
+      "controller"
+    ],
+    "image_url": "",
+    "versions": [
+      {
+        "name": "1.5.0",
+        "hash": "adda3be351c14d1c8899fb0997565aa67e7439b988112340fad707cfe6be28b7",
+        "artifact": "https://github.com/Rayekkk/LeGo-Vibe-Control/releases/download/1.5.0/LeGo-Vibe-Control-1.5.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "LeGo2 Brightness Fix",
+    "author": "Rayek",
+    "description": "Two display fixes for the Lenovo Legion Go 2 OLED under gamescope. Makes the Steam brightness slider work again while the panel runs in HDR/PQ, where the panel ignores the backlight and nothing downstream listens. Also drops the DisplayID block from the EDID gamescope hands to games, which DXVK's vendored parser rejects outright - without it games fall back to a 1499 nit placeholder and generic primaries instead of the panel's real values. Both halves stand down automatically whenever they are not needed.",
+    "tags": [
+      "utilities",
+      "hardware",
+      "display"
+    ],
+    "image_url": "",
+    "versions": [
+      {
+        "name": "1.0.1",
+        "hash": "bc8fbc89107893da33ca2bb446b2e8f92a4cdb27d2f56858b7c0295d40f40a0b",
+        "artifact": "https://github.com/Rayekkk/LeGo2BrightnessFix/releases/download/1.0.1/LeGo2BrightnessFix-1.0.1.zip"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Decky Vibrance HDR",
+    "author": "Rayek",
+    "description": "Saturation control for both SDR and HDR content under gamescope. SDR uses gamescope's own gamut wideness dial; HDR has no such dial, so the plugin generates a colour LUT and hands it to gamescope's HDR look slot. The HDR adjustment is computed in ICtCp, so raising saturation does not drag lightness or hue along with it.",
+    "tags": [
+      "utilities",
+      "display",
+      "color"
+    ],
+    "image_url": "",
+    "versions": [
+      {
+        "name": "1.0.0",
+        "hash": "c5fbde7be36a9212b85b8db87e495217b174b617a433385bd43ffec5a9aef159",
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.0/DeckyVibranceHDR-1.0.0.zip"
+      }
+    ]
+  }
+]

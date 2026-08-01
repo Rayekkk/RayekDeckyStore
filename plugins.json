@@ -9,7 +9,7 @@
       "hardware",
       "performance"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGoTDP/main/docs/logo.png",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGoTDP/main/docs/store.jpg",
     "versions": [
       {
         "name": "1.6.0",
@@ -68,7 +68,7 @@
       "hardware",
       "controller"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo-Vibe-Control/main/docs/logo.png",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo-Vibe-Control/main/docs/store.jpg",
     "versions": [
       {
         "name": "1.5.0",
@@ -127,7 +127,7 @@
       "hardware",
       "display"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo2BrightnessFix/main/docs/logo.png",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo2BrightnessFix/main/docs/store.jpg",
     "versions": [
       {
         "name": "1.0.1",
@@ -151,7 +151,7 @@
       "display",
       "color"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/DeckyVibranceHDR/main/docs/logo.png",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/DeckyVibranceHDR/main/docs/store.jpg",
     "versions": [
       {
         "name": "1.0.0",

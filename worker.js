@@ -33,9 +33,11 @@ export default {
       return new Response('Method not allowed', { status: 405, headers: CORS });
     }
 
-    // Five minutes is well under how often a release happens and keeps a
-    // console that reopens the store tab from hitting GitHub every time.
-    const upstream = await fetch(STORE, { cf: { cacheTtl: 300 } });
+    // Kept short on purpose. A store this small is fetched a handful of times
+    // a day, so there is nothing to protect GitHub from, and a long cache means
+    // pushing a release and then wondering why the store still shows the old
+    // one. Sixty seconds only stops a console that reopens the tab repeatedly.
+    const upstream = await fetch(STORE, { cf: { cacheTtl: 60 } });
 
     if (!upstream.ok) {
       return new Response(`Upstream returned ${upstream.status}`, {

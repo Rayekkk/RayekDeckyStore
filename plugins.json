@@ -121,7 +121,7 @@
     "id": 3,
     "name": "LeGo2 Brightness Fix",
     "author": "Rayek",
-    "description": "Makes the Steam brightness slider work on the Legion Go 2 OLED in HDR, and gives games the panel's real HDR metadata.",
+    "description": "Picks how the Legion Go 2 OLED panel runs - gamma 2.2, PQ, or both on demand - so brightness works without giving up HDR, and gives games the panel's real HDR metadata.",
     "tags": [
       "utilities",
       "hardware",
@@ -129,6 +129,11 @@
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo2BrightnessFix/main/docs/store.jpg",
     "versions": [
+      {
+        "name": "2.0.0",
+        "hash": "596dde0f581145293d6957f25e47df8be15d0cb0d4560dc6712938447b06e241",
+        "artifact": "https://github.com/Rayekkk/LeGo2BrightnessFix/releases/download/2.0.0/LeGo2BrightnessFix-2.0.0.zip"
+      },
       {
         "name": "1.0.1",
         "hash": "bc8fbc89107893da33ca2bb446b2e8f92a4cdb27d2f56858b7c0295d40f40a0b",

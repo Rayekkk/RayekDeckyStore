@@ -12,6 +12,11 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGoTDP/main/docs/store.jpg",
     "versions": [
       {
+        "name": "1.6.1",
+        "hash": "2bccb912292b5d6caffcce17b2009b463fd7828aede88ce0f1af51adae4042b8",
+        "artifact": "https://github.com/Rayekkk/LeGoTDP/releases/download/1.6.1/LeGoTDP-1.6.1.zip"
+      },
+      {
         "name": "1.6.0",
         "hash": "4b04b2e1bb980b312eb482f7a6da8af3c5cbcb7124b4d3c4322ba7cea9b8a805",
         "artifact": "https://github.com/Rayekkk/LeGoTDP/releases/download/1.6.0/LeGoTDP-1.6.0.zip"

@@ -30,6 +30,7 @@ REPOS = [
     ("LeGoTDP",            r"c:\Users\Rayek\Documents\GitHub\LeGoTDP"),
     ("LeGo-Vibe-Control",  r"c:\Users\Rayek\Documents\GitHub\LeGo-Vibe-Control"),
     ("LeGo2BrightnessFix", r"c:\Users\Rayek\Desktop\Legion Go 2 SteamOS HDR\LeGo2BrightnessFix"),
+    ("Ayaneo3Companion",   r"c:\Users\Rayek\Desktop\Legion Go 2 SteamOS HDR\Ayaneo3Companion"),
     ("DeckyVibranceHDR",   r"c:\Users\Rayek\Desktop\Legion Go 2 SteamOS HDR\DeckyVibranceHDR"),
 ]
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plugins.json")

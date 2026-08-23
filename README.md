@@ -3,8 +3,8 @@
 # Rayek's Decky Store
 
 A custom plugin store for [Decky Loader](https://decky.xyz), holding my plugins for the
-Lenovo Legion Go family. Add the address once and they install and update through Decky's
-own **Store** tab, like anything else.
+Lenovo Legion Go and AYANEO handhelds, plus hardware-independent utilities. Add the address
+once and they install and update through Decky's own **Store** tab, like anything else.
 
 </div>
 
@@ -27,7 +27,9 @@ installed from here stay installed.
 
 ---
 
-## Power
+## Lenovo Legion Go plugins
+
+### Power
 
 <div align="center">
 
@@ -46,7 +48,7 @@ power draw read from RAPL.
 
 ---
 
-## Haptics
+### Haptics
 
 <div align="center">
 
@@ -64,7 +66,7 @@ patterns, a touchpad motor set apart from the handles, and per-game profiles.
 
 ---
 
-## SteamOS Brightness Fix
+### SteamOS Brightness Fix
 
 <div align="center">
 
@@ -83,7 +85,30 @@ and stand down whenever they are not needed.
 
 ---
 
-## Display Vibrancy
+## AYANEO plugins
+
+### AYANEO 3 Companion
+
+<div align="center">
+
+<a href="https://github.com/Rayekkk/Ayaneo3Companion"><img src="https://raw.githubusercontent.com/Rayekkk/Ayaneo3Companion/main/Ayaneo3Companion.png" alt="AYANEO 3 Companion" width="640"></a>
+
+[![Release](https://img.shields.io/github/v/release/Rayekkk/Ayaneo3Companion?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/Ayaneo3Companion/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Rayekkk/Ayaneo3Companion/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/Ayaneo3Companion/releases)
+[![License](https://img.shields.io/github/license/Rayekkk/Ayaneo3Companion?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/Ayaneo3Companion/blob/main/LICENSE)
+
+</div>
+
+**[AYANEO 3 Companion](https://github.com/Rayekkk/Ayaneo3Companion)** brings the handheld's
+native hardware controls into Decky Loader. TDP profiles, vibration, RGB lighting, charge
+bypass, Magic Modules, smart-amplifier audio, rear-button bindings and OLED display support
+are all available from Game Mode.
+
+---
+
+## Universal plugins
+
+### Display Vibrancy
 
 <div align="center">
 

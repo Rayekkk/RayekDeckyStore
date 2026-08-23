@@ -153,6 +153,25 @@
   },
   {
     "id": 4,
+    "name": "AYANEO 3 Companion",
+    "author": "Rayek",
+    "description": "TDP, smart-amp audio, battery, controller and OLED support for AYANEO 3.",
+    "tags": [
+      "utilities",
+      "hardware",
+      "performance"
+    ],
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/Ayaneo3Companion/main/Ayaneo3Companion.png",
+    "versions": [
+      {
+        "name": "1.0.0",
+        "hash": "37c7a98b219bc00cfdc6d40f9886ab183a308fad76e1d652f198e964cf10c30a",
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.0/Ayaneo3Companion-1.0.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 5,
     "name": "Decky Vibrance HDR",
     "author": "Rayek",
     "description": "Saturation control under gamescope, for HDR content as well as SDR. Works on any panel it can read an EDID from.",

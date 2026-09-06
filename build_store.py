@@ -14,8 +14,8 @@ the official CDN which does not carry these plugins. hash is the SHA-256 of the
 zip and is verified after downloading, so it has to be the published file
 rather than a local build.
 
-Released assets never change, so hashes already in plugins.json are reused and
-only new releases are downloaded.
+Cached hashes are reused when they still match GitHub's asset digest. New or
+replaced release archives are downloaded and hashed again.
 """
 import base64
 import hashlib
@@ -95,10 +95,12 @@ for repo, plugin_id in REPOS:
         asset = assets[0]
         url = asset["browser_download_url"]
         digest = cache.get((name, tag, url))
+        expected = asset.get("digest")
+        if digest is not None and expected and expected != "sha256:" + digest:
+            digest = None
         if digest is None:
             with urllib.request.urlopen(url) as fh:
                 digest = hashlib.sha256(fh.read()).hexdigest()
-            expected = asset.get("digest")
             if expected and expected != "sha256:" + digest:
                 raise ValueError("SHA-256 mismatch: " + url)
             fetched += 1

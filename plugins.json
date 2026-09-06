@@ -30,6 +30,11 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/Ayaneo3Companion.png",
     "versions": [
       {
+        "name": "1.1.0",
+        "hash": "92815351d662fad2168f9eb7f60d8e22e6d3b33addd4aee37ae2fdb47450f2bf",
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.1.0/Ayaneo3Companion-1.1.0.zip"
+      },
+      {
         "name": "1.0.2",
         "hash": "6cc2ad2f92bbf36a719c7d29cabf6957395ee191d135d3d7a5a1546b33e7fa4e",
         "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.2/Ayaneo3Companion-1.0.2.zip"

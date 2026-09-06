@@ -1,15 +1,104 @@
 [
   {
-    "id": 1,
-    "name": "LeGoTDP",
+    "id": 7,
+    "name": "Legion Go 2 Companion",
     "author": "Rayek",
-    "description": "AMD CPU TDP limits from the Steam overlay. Per-machine presets, per-game profiles, live power draw.",
+    "description": "TDP and CPU profiles, battery protection, gyro, haptics, lighting, button remapping, OLED brightness/HDR fixes and Wi-Fi controls for Legion Go 2.",
+    "tags": [
+      "utilities",
+      "hardware"
+    ],
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
+    "versions": [
+      {
+        "name": "1.0.0",
+        "hash": "dff56d297c9b5f066bd13c1f55f611e9b6353bf6a0ccccb07bbc93db7a683b21",
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.0/LegionGo2Companion-1.0.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "AYANEO 3 Companion",
+    "author": "Rayek",
+    "description": "TDP, smart-amp audio, battery, controller and OLED support for AYANEO 3.",
     "tags": [
       "utilities",
       "hardware",
       "performance"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGoTDP/main/docs/store.jpg",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/Ayaneo3Companion.png",
+    "versions": [
+      {
+        "name": "1.0.2",
+        "hash": "6cc2ad2f92bbf36a719c7d29cabf6957395ee191d135d3d7a5a1546b33e7fa4e",
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.2/Ayaneo3Companion-1.0.2.zip"
+      },
+      {
+        "name": "1.0.1",
+        "hash": "32257a2919c5eb9253b2247e0cc2c8099793263d43449dc99d82bf04c0c6e290",
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.1/Ayaneo3Companion-1.0.1.zip"
+      },
+      {
+        "name": "1.0.0",
+        "hash": "37c7a98b219bc00cfdc6d40f9886ab183a308fad76e1d652f198e964cf10c30a",
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.0/Ayaneo3Companion-1.0.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Decky Vibrance HDR",
+    "author": "Rayek",
+    "description": "Saturation control under gamescope, for HDR content as well as SDR. Works on any panel it can read an EDID from.",
+    "tags": [
+      "utilities",
+      "display",
+      "color"
+    ],
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyVibranceHDR.png",
+    "versions": [
+      {
+        "name": "1.0.1",
+        "hash": "8bbf5601ea5b9e9865329773f05e7a9a8e8496303a6bb447a7da5a00c61407de",
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.1/DeckyVibranceHDR-1.0.1.zip"
+      },
+      {
+        "name": "1.0.0",
+        "hash": "c5fbde7be36a9212b85b8db87e495217b174b617a433385bd43ffec5a9aef159",
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.0/DeckyVibranceHDR-1.0.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "SpotiDeck",
+    "author": "Rayek",
+    "description": "Spotify playback, playlists, search and your library inside Decky, with separate music and game audio controls. Requires Spotify Premium and your own Spotify Web API Client ID; local playback also requires a Spotify Soloist API key.",
+    "tags": [
+      "music",
+      "spotify"
+    ],
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/SpotiDeck.png",
+    "versions": [
+      {
+        "name": "1.0.0",
+        "hash": "2702cbe83c3d2e2b61450feeb8232261992a12631f1158693ff484f2481889aa",
+        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.0.0/SpotiDeck-1.0.0.zip"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "LeGoTDP",
+    "author": "Rayek",
+    "description": "AMD CPU TDP limits from the Steam overlay. Per-machine presets, per-game profiles, live power draw. Support has ended because its features are now part of Legion Go 2 Companion; this plugin remains functional but will receive no further updates.",
+    "tags": [
+      "utilities",
+      "hardware",
+      "performance"
+    ],
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LeGoTDP.png",
     "versions": [
       {
         "name": "1.7.0",
@@ -72,13 +161,13 @@
     "id": 2,
     "name": "LeGo Vibe Control",
     "author": "Rayek",
-    "description": "Controller vibration and touchpad haptics from the Steam overlay. Five rumble patterns, per-game profiles.",
+    "description": "Controller vibration and touchpad haptics from the Steam overlay. Five rumble patterns, per-game profiles. Support has ended because its features are now part of Legion Go 2 Companion; this plugin remains functional but will receive no further updates.",
     "tags": [
       "utilities",
       "hardware",
       "controller"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo-Vibe-Control/main/docs/store.jpg",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LeGo-Vibe-Control.png",
     "versions": [
       {
         "name": "1.5.0",
@@ -131,13 +220,13 @@
     "id": 3,
     "name": "LeGo2 Brightness Fix",
     "author": "Rayek",
-    "description": "Picks how the Legion Go 2 OLED panel runs - gamma 2.2, PQ, or both on demand - so brightness works without giving up HDR, and gives games the panel's real HDR metadata.",
+    "description": "Picks how the Legion Go 2 OLED panel runs - gamma 2.2, PQ, or both on demand - so brightness works without giving up HDR, and gives games the panel's real HDR metadata. Support has ended because its features are now part of Legion Go 2 Companion; this plugin remains functional but will receive no further updates.",
     "tags": [
       "utilities",
       "hardware",
       "display"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/LeGo2BrightnessFix/main/docs/store.jpg",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LeGo2BrightnessFix.png",
     "versions": [
       {
         "name": "2.0.0",
@@ -153,59 +242,6 @@
         "name": "1.0.0",
         "hash": "989c597459a95f345d2e9e677bdad5f9518f1095044ae2584cccd2c1ac2a7c3e",
         "artifact": "https://github.com/Rayekkk/LeGo2BrightnessFix/releases/download/1.0.0/LeGo2BrightnessFix-1.0.0.zip"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "AYANEO 3 Companion",
-    "author": "Rayek",
-    "description": "TDP, smart-amp audio, battery, controller and OLED support for AYANEO 3.",
-    "tags": [
-      "utilities",
-      "hardware",
-      "performance"
-    ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/Ayaneo3Companion/main/Ayaneo3Companion.png",
-    "versions": [
-      {
-        "name": "1.0.2",
-        "hash": "6cc2ad2f92bbf36a719c7d29cabf6957395ee191d135d3d7a5a1546b33e7fa4e",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.2/Ayaneo3Companion-1.0.2.zip"
-      },
-      {
-        "name": "1.0.1",
-        "hash": "32257a2919c5eb9253b2247e0cc2c8099793263d43449dc99d82bf04c0c6e290",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.1/Ayaneo3Companion-1.0.1.zip"
-      },
-      {
-        "name": "1.0.0",
-        "hash": "37c7a98b219bc00cfdc6d40f9886ab183a308fad76e1d652f198e964cf10c30a",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.0/Ayaneo3Companion-1.0.0.zip"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Decky Vibrance HDR",
-    "author": "Rayek",
-    "description": "Saturation control under gamescope, for HDR content as well as SDR. Works on any panel it can read an EDID from.",
-    "tags": [
-      "utilities",
-      "display",
-      "color"
-    ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/DeckyVibranceHDR/main/docs/store.jpg",
-    "versions": [
-      {
-        "name": "1.0.1",
-        "hash": "8bbf5601ea5b9e9865329773f05e7a9a8e8496303a6bb447a7da5a00c61407de",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.1/DeckyVibranceHDR-1.0.1.zip"
-      },
-      {
-        "name": "1.0.0",
-        "hash": "c5fbde7be36a9212b85b8db87e495217b174b617a433385bd43ffec5a9aef159",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.0/DeckyVibranceHDR-1.0.0.zip"
       }
     ]
   }

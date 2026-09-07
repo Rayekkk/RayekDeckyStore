@@ -95,6 +95,22 @@ Uninstall the overlapping standalone plugins before installing Companion, retain
 
 ---
 
+### DeckyEQ
+
+<div align="center">
+
+<a href="https://github.com/Rayekkk/DeckyEQ"><img src="assets/DeckyEQ.png" alt="DeckyEQ" width="640"></a>
+
+[![Release](https://img.shields.io/github/v/release/Rayekkk/DeckyEQ?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Rayekkk/DeckyEQ/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/releases)
+[![License](https://img.shields.io/github/license/Rayekkk/DeckyEQ?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/blob/main/LICENSE)
+
+</div>
+
+**[DeckyEQ](https://github.com/Rayekkk/DeckyEQ)** brings a live ten-band PipeWire equalizer to Gaming Mode, with bass and treble controls, advanced filters, output selection and up to 64 user presets. Import and export sounds as JSON, adjust input gain and use optional automatic headroom. Requires a working PipeWire audio session; no extra effects packages are needed on the tested SteamOS system.
+
+---
+
 ## Retired plugins
 
 These standalone plugins remain available for existing users, but support has ended and their repositories are archived as read-only. Their features now live in [Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion).

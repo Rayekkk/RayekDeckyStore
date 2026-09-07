@@ -32,14 +32,17 @@ REPOS = [
     ("Ayaneo3Companion", 4),
     ("DeckyVibranceHDR", 5),
     ("SpotiDeck", 6),
+    ("DeckyEQ", 8),
     ("LeGoTDP", 1),
     ("LeGo-Vibe-Control", 2),
     ("LeGo2BrightnessFix", 3),
 ]
 DESCRIPTION_OVERRIDES = {
+    "DeckyEQ": "Live ten-band PipeWire equalizer with bass and treble controls, advanced filters, output selection and portable user presets for Decky Loader.",
     "LegionGo2Companion": "TDP and CPU profiles, battery protection, gyro, haptics, lighting, button remapping, OLED brightness/HDR fixes and Wi-Fi controls for Legion Go 2.",
     "SpotiDeck": "Spotify playback, playlists, search and your library inside Decky, with separate music and game audio controls. Requires Spotify Premium and your own Spotify Web API Client ID; local playback also requires a Spotify Soloist API key.",
 }
+TAG_OVERRIDES = {"DeckyEQ": ["audio", "utilities"]}
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plugins.json")
 
 
@@ -120,7 +123,7 @@ for repo, plugin_id in REPOS:
         "name": name,
         "author": pj.get("author", ""),
         "description": DESCRIPTION_OVERRIDES.get(repo, pub.get("description", "")),
-        "tags": pub.get("tags", ["utilities", "hardware"]),
+        "tags": TAG_OVERRIDES.get(repo, pub.get("tags", ["utilities", "hardware"])),
         "image_url": "https://raw.githubusercontent.com/%s/RayekDeckyStore/main/assets/%s.png" % (OWNER, repo),
         "versions": versions,
     })

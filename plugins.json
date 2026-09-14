@@ -74,6 +74,11 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyVibranceHDR.png",
     "versions": [
       {
+        "name": "1.0.2",
+        "hash": "55ed340fb6dac45bc8d192611ce2ca33150e0cbce902eef7e9001438843f61e0",
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.2/DeckyVibranceHDR-1.0.2.zip"
+      },
+      {
         "name": "1.0.1",
         "hash": "8bbf5601ea5b9e9865329773f05e7a9a8e8496303a6bb447a7da5a00c61407de",
         "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.1/DeckyVibranceHDR-1.0.1.zip"

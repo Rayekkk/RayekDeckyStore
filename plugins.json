@@ -11,6 +11,11 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
     "versions": [
       {
+        "name": "1.0.3",
+        "hash": "a6803d1d8e8f36b913214f56e6c7fa70d29362de0757436f03db6bdd6bd82bec",
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.3/LegionGo2Companion-1.0.3.zip"
+      },
+      {
         "name": "1.0.2",
         "hash": "8744b46c1b4404365c09337c25b9e41a6bbf748af31f01161331f71adb37ad83",
         "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.2/LegionGo2Companion-1.0.2.zip"
@@ -101,6 +106,11 @@
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/SpotiDeck.png",
     "versions": [
+      {
+        "name": "1.1.1",
+        "hash": "0ececbeb51a51e9839a131248a592db35ad426ebb3c14a95722de348fe3f467f",
+        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.1.1/SpotiDeck-1.1.1.zip"
+      },
       {
         "name": "1.1.0",
         "hash": "08b53199dfa295542866151aea3acc68e9a3141654d7001221e71efd56611c56",

@@ -11,6 +11,11 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
     "versions": [
       {
+        "name": "1.0.4",
+        "hash": "266e7714c1483b24c799d634aec655559c558322da859003aab5db4bfe3aef82",
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.4/LegionGo2Companion-1.0.4.zip"
+      },
+      {
         "name": "1.0.3",
         "hash": "a6803d1d8e8f36b913214f56e6c7fa70d29362de0757436f03db6bdd6bd82bec",
         "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.3/LegionGo2Companion-1.0.3.zip"

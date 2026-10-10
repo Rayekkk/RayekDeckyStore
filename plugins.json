@@ -11,6 +11,11 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
     "versions": [
       {
+        "name": "2.0.0",
+        "hash": "a50ff243726039643a86c866b0d0cb095e4c2e8978af131e31070fbb8df674a1",
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.0.0/LegionGo2Companion-2.0.0.zip"
+      },
+      {
         "name": "1.0.4",
         "hash": "266e7714c1483b24c799d634aec655559c558322da859003aab5db4bfe3aef82",
         "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.4/LegionGo2Companion-1.0.4.zip"
@@ -41,7 +46,7 @@
     "id": 4,
     "name": "AYANEO 3 Companion",
     "author": "Rayek",
-    "description": "TDP, smart-amp audio, battery, controller and OLED support for AYANEO 3.",
+    "description": "TDP, fan, smart-amp audio, battery, controller and OLED support for AYANEO 3.",
     "tags": [
       "utilities",
       "hardware",
@@ -49,6 +54,11 @@
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/Ayaneo3Companion.png",
     "versions": [
+      {
+        "name": "1.2.0",
+        "hash": "b1c9a5529b3f5a4dee88ca275d285bb6347092a5f7e90db07b87b24725b4f651",
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.2.0/Ayaneo3Companion-1.2.0.zip"
+      },
       {
         "name": "1.1.0",
         "hash": "92815351d662fad2168f9eb7f60d8e22e6d3b33addd4aee37ae2fdb47450f2bf",
@@ -83,6 +93,16 @@
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyVibranceHDR.png",
     "versions": [
+      {
+        "name": "1.1.1",
+        "hash": "bd3ccf13afa69d81e56e6d17ebf9e9e83f3b76daeae13c4c691757c343c3c5ea",
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.1.1/DeckyVibranceHDR-1.1.1.zip"
+      },
+      {
+        "name": "1.1.0",
+        "hash": "3b8576406a46906f9a0c3451abd80f9a7cd8cde09a438959e2a43404446ce509",
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.1.0/DeckyVibranceHDR-1.1.0.zip"
+      },
       {
         "name": "1.0.2",
         "hash": "55ed340fb6dac45bc8d192611ce2ca33150e0cbce902eef7e9001438843f61e0",

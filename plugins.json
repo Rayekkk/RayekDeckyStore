@@ -3,13 +3,18 @@
     "id": 7,
     "name": "Legion Go 2 Companion",
     "author": "Rayek",
-    "description": "TDP and CPU profiles, battery protection, gyro, haptics, lighting, button remapping, OLED brightness/HDR fixes and Wi-Fi controls for Legion Go 2.",
+    "description": "TDP and CPU profiles, Fan Control with custom curves, battery protection, gyro, haptics, lighting, button remapping, OLED brightness/HDR fixes and Wi-Fi controls for Legion Go 2.",
     "tags": [
       "utilities",
       "hardware"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
     "versions": [
+      {
+        "name": "2.1.0",
+        "hash": "c0e96b7208f749e2ace94f3c4174e590649c2b6f57abf752fddef92089ce60d1",
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.1.0/LegionGo2Companion-2.1.0.zip"
+      },
       {
         "name": "2.0.0",
         "hash": "a50ff243726039643a86c866b0d0cb095e4c2e8978af131e31070fbb8df674a1",

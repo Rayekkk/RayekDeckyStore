@@ -39,7 +39,7 @@ REPOS = [
 ]
 DESCRIPTION_OVERRIDES = {
     "DeckyEQ": "Live ten-band PipeWire equalizer with bass and treble controls, advanced filters, output selection and portable user presets for Decky Loader.",
-    "LegionGo2Companion": "TDP and CPU profiles, Fan Control with custom curves, battery protection, gyro, haptics, lighting, button remapping, OLED brightness/HDR fixes and Wi-Fi controls for Legion Go 2.",
+    "LegionGo2Companion": "TDP and CPU profiles, Fan Control with custom curves, battery protection, gyro, haptics, lighting, button remapping, controller firmware updates, OLED brightness/HDR fixes and Wi-Fi controls for Legion Go 2, plus a Desktop Mode app.",
     "SpotiDeck": "Spotify playback, playlists, search and your library inside Decky, with separate music and game audio controls. Requires Spotify Premium and your own Spotify Web API Client ID; local playback also requires a Spotify Soloist API key.",
 }
 TAG_OVERRIDES = {"DeckyEQ": ["audio", "utilities"]}

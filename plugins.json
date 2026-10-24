@@ -182,13 +182,18 @@
     "id": 8,
     "name": "DeckyEQ",
     "author": "Rayek",
-    "description": "Live ten-band PipeWire equalizer with bass and treble controls, advanced filters, output selection and portable user presets for Decky Loader.",
+    "description": "Live ten-band PipeWire equalizer with a full-screen curve editor, bass, treble, stereo width, volume boost with a limiter, built-in and your own presets, and a sound per game for Decky Loader.",
     "tags": [
       "audio",
       "utilities"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyEQ.png",
     "versions": [
+      {
+        "name": "1.1.0",
+        "hash": "1365bd31a97d62371c38c244925bcf2af1fac66b1702b0c608c73055be11b604",
+        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.1.0/DeckyEQ-1.1.0.zip"
+      },
       {
         "name": "1.0.0",
         "hash": "c52f87851328bd95915707c1cc931b75601db3d0588231a26f17d9898f02486c",

@@ -107,7 +107,7 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 </div>
 
-**[DeckyEQ](https://github.com/Rayekkk/DeckyEQ)** brings a live ten-band PipeWire equalizer to Gaming Mode, with bass and treble controls, advanced filters, output selection and up to 64 user presets. Import and export sounds as JSON, adjust input gain and use optional automatic headroom. Requires a working PipeWire audio session; no extra effects packages are needed on the tested SteamOS system.
+**[DeckyEQ](https://github.com/Rayekkk/DeckyEQ)** brings a live ten-band PipeWire equalizer to Gaming Mode, with a full-screen curve editor for touch and controller, bass, treble, stereo width and a volume boost of up to 12 dB kept from clipping by a limiter. Pick a built-in preset (including Legion Go S and Legion Go 2), save up to 64 of your own, give a game its own sound, and import or export sounds as JSON. Steam's volume and output stay untouched. Requires a working PipeWire audio session; no extra effects packages are needed on the tested SteamOS system.
 
 ---
 

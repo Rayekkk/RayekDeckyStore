@@ -153,25 +153,6 @@ These standalone plugins remain available for existing users, but support has en
 
 ---
 
-### LeGo2BrightnessFix
-
-<div align="center">
-
-<a href="https://github.com/Rayekkk/LeGo2BrightnessFix"><img src="assets/LeGo2BrightnessFix.png" alt="LeGo2BrightnessFix" width="640"></a>
-
-[![Release](https://img.shields.io/github/v/release/Rayekkk/LeGo2BrightnessFix?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/LeGo2BrightnessFix/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Rayekkk/LeGo2BrightnessFix/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/LeGo2BrightnessFix/releases)
-[![License](https://img.shields.io/github/license/Rayekkk/LeGo2BrightnessFix?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/LeGo2BrightnessFix/blob/main/LICENSE)
-
-</div>
-
-**[LeGo2BrightnessFix](https://github.com/Rayekkk/LeGo2BrightnessFix)** restores Steam brightness control on the Legion Go 2 OLED in HDR and gives games the panel's real HDR metadata.
-
-> [!WARNING]
-> **Support ended:** LeGo2BrightnessFix remains functional but will receive no further updates because its features are now part of [Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion); on Legion Go 2, uninstall this standalone plugin and switch to Companion.
-
----
-
 ## How this store works
 
 There is no server. `plugins.json` is the entire store: Decky fetches it, parses it as a list

@@ -323,34 +323,5 @@
         "artifact": "https://github.com/Rayekkk/LeGo-Vibe-Control/releases/download/1.0.0/lego2-vibe-control.zip"
       }
     ]
-  },
-  {
-    "id": 3,
-    "name": "LeGo2 Brightness Fix",
-    "author": "Rayek",
-    "description": "Picks how the Legion Go 2 OLED panel runs - gamma 2.2, PQ, or both on demand - so brightness works without giving up HDR, and gives games the panel's real HDR metadata. Support has ended because its features are now part of Legion Go 2 Companion; this plugin remains functional but will receive no further updates.",
-    "tags": [
-      "utilities",
-      "hardware",
-      "display"
-    ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LeGo2BrightnessFix.png",
-    "versions": [
-      {
-        "name": "2.0.0",
-        "hash": "596dde0f581145293d6957f25e47df8be15d0cb0d4560dc6712938447b06e241",
-        "artifact": "https://github.com/Rayekkk/LeGo2BrightnessFix/releases/download/2.0.0/LeGo2BrightnessFix-2.0.0.zip"
-      },
-      {
-        "name": "1.0.1",
-        "hash": "bc8fbc89107893da33ca2bb446b2e8f92a4cdb27d2f56858b7c0295d40f40a0b",
-        "artifact": "https://github.com/Rayekkk/LeGo2BrightnessFix/releases/download/1.0.1/LeGo2BrightnessFix-1.0.1.zip"
-      },
-      {
-        "name": "1.0.0",
-        "hash": "989c597459a95f345d2e9e677bdad5f9518f1095044ae2584cccd2c1ac2a7c3e",
-        "artifact": "https://github.com/Rayekkk/LeGo2BrightnessFix/releases/download/1.0.0/LeGo2BrightnessFix-1.0.0.zip"
-      }
-    ]
   }
 ]

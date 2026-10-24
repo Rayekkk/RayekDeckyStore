@@ -111,48 +111,6 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 ---
 
-## Retired plugins
-
-These standalone plugins remain available for existing users, but support has ended and their repositories are archived as read-only. Their features now live in [Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion).
-
-### LeGoTDP
-
-<div align="center">
-
-<a href="https://github.com/Rayekkk/LeGoTDP"><img src="assets/LeGoTDP.png" alt="LeGoTDP" width="640"></a>
-
-[![Release](https://img.shields.io/github/v/release/Rayekkk/LeGoTDP?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/LeGoTDP/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Rayekkk/LeGoTDP/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/LeGoTDP/releases)
-[![License](https://img.shields.io/github/license/Rayekkk/LeGoTDP?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/LeGoTDP/blob/main/LICENSE)
-
-</div>
-
-**[LeGoTDP](https://github.com/Rayekkk/LeGoTDP)** sets AMD CPU TDP limits from the Steam overlay on the Legion Go 2 and Legion Go S, with per-machine presets, per-game profiles and live power draw.
-
-> [!WARNING]
-> **Support ended:** LeGoTDP remains functional but will receive no further updates because its features are now part of [Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion); on Legion Go 2, uninstall this standalone plugin and switch to Companion.
-
----
-
-### LeGoVibeControl
-
-<div align="center">
-
-<a href="https://github.com/Rayekkk/LeGo-Vibe-Control"><img src="assets/LeGo-Vibe-Control.png" alt="LeGoVibeControl" width="640"></a>
-
-[![Release](https://img.shields.io/github/v/release/Rayekkk/LeGo-Vibe-Control?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/LeGo-Vibe-Control/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Rayekkk/LeGo-Vibe-Control/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/LeGo-Vibe-Control/releases)
-[![License](https://img.shields.io/github/license/Rayekkk/LeGo-Vibe-Control?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/LeGo-Vibe-Control/blob/main/LICENSE)
-
-</div>
-
-**[LeGoVibeControl](https://github.com/Rayekkk/LeGo-Vibe-Control)** controls vibration intensity, patterns and touchpad haptics on the Legion Go and Legion Go 2, with per-game profiles.
-
-> [!WARNING]
-> **Support ended:** LeGoVibeControl remains functional but will receive no further updates because its features are now part of [Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion); on Legion Go 2, uninstall this standalone plugin and switch to Companion.
-
----
-
 ## How this store works
 
 There is no server. `plugins.json` is the entire store: Decky fetches it, parses it as a list
@@ -161,7 +119,7 @@ of plugins, and downloads each zip straight from its own GitHub release.
 `build_store.py` regenerates the file. It reads `plugin.json` from each plugin repo on GitHub for the
 name, author, description and tags, lists published stable releases, and hashes each new
 published zip so Decky can verify what it downloaded. Run it after a release and commit the
-result. Store artwork is kept in `assets/`, plugin IDs stay stable, and retired plugins retain their support notices. Draft and prerelease versions are excluded. **The address never changes.**
+result. Store artwork is kept in `assets/` and plugin IDs stay stable. Draft and prerelease versions are excluded. **The address never changes.**
 
 ```bash
 python build_store.py

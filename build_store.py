@@ -33,8 +33,6 @@ REPOS = [
     ("DeckyVibranceHDR", 5),
     ("SpotiDeck", 6),
     ("DeckyEQ", 8),
-    ("LeGoTDP", 1),
-    ("LeGo-Vibe-Control", 2),
 ]
 DESCRIPTION_OVERRIDES = {
     "DeckyEQ": "Live ten-band PipeWire equalizer with bass and treble controls, advanced filters, output selection and portable user presets for Decky Loader.",

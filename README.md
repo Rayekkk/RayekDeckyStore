@@ -59,7 +59,7 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 </div>
 
-**[AYANEO 3 Companion](https://github.com/Rayekkk/Ayaneo3Companion)** brings the handheld's native hardware controls into Decky Loader. TDP profiles, vibration, RGB lighting, charge bypass, Magic Modules, smart-amplifier audio, rear-button bindings and OLED display support are all available from Game Mode.
+**[AYANEO 3 Companion](https://github.com/Rayekkk/Ayaneo3Companion)** brings the handheld's hardware controls into Decky Loader: TDP and CPU profiles, Fan Control with custom curves, vibration, lighting, rear-button bindings with TM Guard, Magic Modules, charge bypass, smart-amplifier audio and OLED display support, all from Game Mode.
 
 ---
 

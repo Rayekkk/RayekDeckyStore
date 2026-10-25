@@ -151,6 +151,29 @@
     ]
   },
   {
+    "id": 8,
+    "name": "DeckyEQ",
+    "author": "Rayek",
+    "description": "Live ten-band PipeWire equalizer with a full-screen curve editor, bass, treble, stereo width, volume boost with a limiter, built-in and your own presets, and a sound per game for Decky Loader.",
+    "tags": [
+      "audio",
+      "utilities"
+    ],
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyEQ.png",
+    "versions": [
+      {
+        "name": "1.1.0",
+        "hash": "1365bd31a97d62371c38c244925bcf2af1fac66b1702b0c608c73055be11b604",
+        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.1.0/DeckyEQ-1.1.0.zip"
+      },
+      {
+        "name": "1.0.0",
+        "hash": "c52f87851328bd95915707c1cc931b75601db3d0588231a26f17d9898f02486c",
+        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.0.0/DeckyEQ-1.0.0.zip"
+      }
+    ]
+  },
+  {
     "id": 6,
     "name": "SpotiDeck",
     "author": "Rayek",
@@ -179,25 +202,20 @@
     ]
   },
   {
-    "id": 8,
-    "name": "DeckyEQ",
+    "id": 9,
+    "name": "FSR4 Injector",
     "author": "Rayek",
-    "description": "Live ten-band PipeWire equalizer with a full-screen curve editor, bass, treble, stereo width, volume boost with a limiter, built-in and your own presets, and a sound per game for Decky Loader.",
+    "description": "Official AMD FSR 4.1 (Lite) in FSR 3.1+ games on RDNA 3.5 handhelds under Proton.",
     "tags": [
-      "audio",
-      "utilities"
+      "utilities",
+      "graphics"
     ],
-    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyEQ.png",
+    "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/FSR4Injector.png",
     "versions": [
       {
-        "name": "1.1.0",
-        "hash": "1365bd31a97d62371c38c244925bcf2af1fac66b1702b0c608c73055be11b604",
-        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.1.0/DeckyEQ-1.1.0.zip"
-      },
-      {
         "name": "1.0.0",
-        "hash": "c52f87851328bd95915707c1cc931b75601db3d0588231a26f17d9898f02486c",
-        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.0.0/DeckyEQ-1.0.0.zip"
+        "hash": "827f4e1d3969b261cbc0c883eb31aeab759fa34c3de0b84dbef2977581ef7e76",
+        "artifact": "https://github.com/Rayekkk/FSR4Injector/releases/download/1.0.0/FSR4Injector-1.0.0.zip"
       }
     ]
   }

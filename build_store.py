@@ -31,8 +31,9 @@ REPOS = [
     ("LegionGo2Companion", 7),
     ("Ayaneo3Companion", 4),
     ("DeckyVibranceHDR", 5),
-    ("SpotiDeck", 6),
     ("DeckyEQ", 8),
+    ("SpotiDeck", 6),
+    ("FSR4Injector", 9),
 ]
 DESCRIPTION_OVERRIDES = {
     "DeckyEQ": "Live ten-band PipeWire equalizer with a full-screen curve editor, bass, treble, stereo width, volume boost with a limiter, built-in and your own presets, and a sound per game for Decky Loader.",

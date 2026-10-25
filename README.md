@@ -79,6 +79,22 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 ---
 
+### DeckyEQ
+
+<div align="center">
+
+<a href="https://github.com/Rayekkk/DeckyEQ"><img src="assets/DeckyEQ.png" alt="DeckyEQ" width="640"></a>
+
+[![Release](https://img.shields.io/github/v/release/Rayekkk/DeckyEQ?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Rayekkk/DeckyEQ/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/releases)
+[![License](https://img.shields.io/github/license/Rayekkk/DeckyEQ?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/blob/main/LICENSE)
+
+</div>
+
+**[DeckyEQ](https://github.com/Rayekkk/DeckyEQ)** brings a live ten-band PipeWire equalizer to Gaming Mode, with a full-screen curve editor for touch and controller, bass, treble, stereo width and a volume boost of up to 12 dB kept from clipping by a limiter. Pick a built-in preset (including Legion Go S and Legion Go 2), save up to 64 of your own, give a game its own sound, and import or export sounds as JSON. Steam's volume and output stay untouched. Requires a working PipeWire audio session; no extra effects packages are needed on the tested SteamOS system.
+
+---
+
 ### SpotiDeck
 
 <div align="center">
@@ -95,19 +111,19 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 ---
 
-### DeckyEQ
+### FSR4 Injector
 
 <div align="center">
 
-<a href="https://github.com/Rayekkk/DeckyEQ"><img src="assets/DeckyEQ.png" alt="DeckyEQ" width="640"></a>
+<a href="https://github.com/Rayekkk/FSR4Injector"><img src="assets/FSR4Injector.png" alt="FSR4 Injector" width="640"></a>
 
-[![Release](https://img.shields.io/github/v/release/Rayekkk/DeckyEQ?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Rayekkk/DeckyEQ/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/releases)
-[![License](https://img.shields.io/github/license/Rayekkk/DeckyEQ?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/DeckyEQ/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/Rayekkk/FSR4Injector?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/FSR4Injector/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Rayekkk/FSR4Injector/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/FSR4Injector/releases)
+[![License](https://img.shields.io/badge/license-BSD--3_+_LGPL--2.1-424A53?style=for-the-badge&labelColor=141417)](https://github.com/Rayekkk/FSR4Injector#license)
 
 </div>
 
-**[DeckyEQ](https://github.com/Rayekkk/DeckyEQ)** brings a live ten-band PipeWire equalizer to Gaming Mode, with a full-screen curve editor for touch and controller, bass, treble, stereo width and a volume boost of up to 12 dB kept from clipping by a limiter. Pick a built-in preset (including Legion Go S and Legion Go 2), save up to 64 of your own, give a game its own sound, and import or export sounds as JSON. Steam's volume and output stay untouched. Requires a working PipeWire audio session; no extra effects packages are needed on the tested SteamOS system.
+**[FSR4 Injector](https://github.com/Rayekkk/FSR4Injector)** brings AMD's official FSR 4.1 upscaler, with the Lite model made for handhelds, to games that already use FSR 3.1 on RDNA 3.5 handhelds (Radeon 890M) in SteamOS Gaming Mode. Turn it on per game from the Quick Access Menu; AMD's own library is downloaded from AMD and nothing is patched on disk.
 
 ---
 

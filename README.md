@@ -41,7 +41,7 @@ installed from here stay installed.
 
 </div>
 
-**[Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion)** brings TDP and CPU profiles, Fan Control with custom curves, battery protection, controller haptics, gyro, lighting, button remapping, controller firmware updates, OLED brightness/HDR fixes and Wi-Fi controls into one Steam overlay, with the same controls in a Desktop Mode app. It includes the features of LeGoTDP, LeGoVibeControl and LeGo2BrightnessFix.
+**[Legion Go 2 Companion](https://github.com/Rayekkk/LegionGo2Companion)** brings TDP and CPU profiles, Fan Control with custom curves, battery protection, controller haptics, gyro, controller sleep, lighting, button remapping, controller firmware updates, an HDR brightness fix for games and Wi-Fi controls into one Steam overlay, with the same controls in a Desktop Mode app. It includes the features of LeGoTDP, LeGoVibeControl and the HDR fix from LeGo2BrightnessFix (SteamOS 3.9 handles the rest of the screen natively). Early beta on the Legion Go and Legion Go S.
 
 Uninstall the overlapping standalone plugins before installing Companion: it pauses while they are installed and does not import their settings. See the [migration instructions](https://github.com/Rayekkk/LegionGo2Companion#installation).
 

@@ -13,6 +13,12 @@
 // This worker answers the preflight and passes the file through. plugins.json
 // stays where it is and build_store.py still owns it; nothing here needs
 // redeploying when a plugin is released.
+//
+// Decky 3.3.1 checks installed plugins for updates at <store>/versions and
+// expects {"Plugin name": ["version", "sha256"]}, not the plugin list; a list
+// there makes it reject the answer, so no update is ever offered. That map is
+// built from the same plugins.json (versions[0] is the newest, build_store.py
+// keeps that order).
 
 const STORE = 'https://rayekkk.github.io/RayekDeckyStore/plugins.json';
 
@@ -46,9 +52,19 @@ export default {
       });
     }
 
-    return new Response(upstream.body, {
-      status: 200,
-      headers: { ...CORS, 'Content-Type': 'application/json; charset=utf-8' },
-    });
+    const headers = { ...CORS, 'Content-Type': 'application/json; charset=utf-8' };
+    if (new URL(request.url).pathname.replace(/\/+$/, '').endsWith('/versions')) {
+      return new Response(JSON.stringify(versionMap(await upstream.json())), { status: 200, headers });
+    }
+    return new Response(upstream.body, { status: 200, headers });
   },
 };
+
+export function versionMap(plugins) {
+  const map = {};
+  for (const plugin of plugins) {
+    const newest = plugin.versions?.[0];
+    if (newest) map[plugin.name] = [newest.name, newest.hash];
+  }
+  return map;
+}

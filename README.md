@@ -164,7 +164,12 @@ request non-simple, so the browser sends a `OPTIONS` preflight first and only is
 leaves the store spinning forever rather than showing an error, because `Store.tsx` has no
 `catch` around the fetch.
 
-The worker never needs redeploying. It reads whatever `plugins.json` currently says.
+It also answers `/versions`, which Decky 3.3.1 calls to check installed plugins for updates: there it returns
+`{"Plugin name": ["newest version", "sha256"]}` built from the same `plugins.json`, the shape the official store
+uses. Without it Decky rejects the answer and never offers an update.
+
+The worker reads whatever `plugins.json` currently says, so a plugin release never needs it redeployed; only a
+change to `worker.js` itself does. `node --test worker.test.mjs` checks it against this repository's `plugins.json`.
 
 </details>
 

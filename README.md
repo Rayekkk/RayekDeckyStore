@@ -153,6 +153,10 @@ git commit -am "Refresh the store" && git push
 The file is served by GitHub Pages from `main`, and `worker.js` fronts it at the address
 above. A push takes a minute or so to appear.
 
+The same rebuild also runs by itself every Monday (`.github/workflows/refresh-store.yml`): new releases reach the
+store and the download counts stay fresh, and a commit is made only when `plugins.json` changed. Run it at any time
+from **Actions → Refresh store → Run workflow**.
+
 <details>
 <summary><b>Why a worker in front of GitHub Pages</b></summary>
 

@@ -1,16 +1,24 @@
 <div align="center">
 
-# Rayek's Decky Store
+<img src="assets/logo.webp" alt="RayekDeckyStore: every Rayek plugin, one store" width="760">
 
-A custom plugin store for [Decky Loader](https://decky.xyz), holding my plugins for the
-Lenovo Legion Go and AYANEO handhelds, plus hardware-independent utilities. Add the address
-once and they install and update through Decky's own **Store** tab, like anything else.
+[![Store](https://img.shields.io/badge/store-custom_channel-C2410C?style=for-the-badge&labelColor=141417)](#installation)
+[![Plugins](https://img.shields.io/badge/plugins-Legion_Go_·_AYANEO_·_any_handheld-15803D?style=for-the-badge&labelColor=141417)](#plugins)
+[![Hosting](https://img.shields.io/badge/hosting-GitHub_Pages_+_Worker-6E40C9?style=for-the-badge&labelColor=141417)](#how-it-works)
+[![Requires](https://img.shields.io/badge/requires-Decky_Loader-0969DA?style=for-the-badge&labelColor=141417)](https://decky.xyz)
+
+**Every Rayek plugin, one store.**
+A custom plugin store for [Decky Loader](https://decky.xyz), holding my plugins for the Lenovo Legion Go and AYANEO
+handhelds, plus hardware-independent utilities. Add the address once and they install and update through Decky's own
+**Store** tab, like anything else.
+
+[Installation](#installation) · [Plugins](#plugins) · [How it works](#how-it-works) · [License](#license)
 
 </div>
 
 ---
 
-## Adding it to Decky
+## Installation
 
 Copy this address:
 
@@ -127,7 +135,7 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 ---
 
-## How this store works
+## How it works
 
 There is no server. `plugins.json` is the entire store: Decky fetches it, parses it as a list
 of plugins, and downloads each zip straight from its own GitHub release.
@@ -145,6 +153,9 @@ git commit -am "Refresh the store" && git push
 The file is served by GitHub Pages from `main`, and `worker.js` fronts it at the address
 above. A push takes a minute or so to appear.
 
+<details>
+<summary><b>Why a worker in front of GitHub Pages</b></summary>
+
 The worker exists for one reason. Decky adds an `X-Decky-Version` header, which makes the
 request non-simple, so the browser sends a `OPTIONS` preflight first and only issues the real
 `GET` if the answer names that header. **No static host answers it:** GitHub Pages replies
@@ -155,7 +166,12 @@ leaves the store spinning forever rather than showing an error, because `Store.t
 
 The worker never needs redeploying. It reads whatever `plugins.json` currently says.
 
-Three details the file has to get right, all handled by the generator:
+</details>
+
+<details>
+<summary><b>What <code>plugins.json</code> has to get right</b></summary>
+
+Three details, all handled by the generator:
 
 - **`artifact`** must be present on every version. Without it Decky falls back to the official
   CDN, which does not have these plugins.
@@ -164,10 +180,12 @@ Three details the file has to get right, all handled by the generator:
 - **`name`** must match `plugin.json` exactly, because that is how Decky matches an installed
   plugin against a store entry when it checks for updates.
 
+</details>
+
 ---
 
-<div align="center">
+## License
 
-*Plugins are BSD 3-Clause. See each repository for its own licence and notices.*
-
-</div>
+The plugins are BSD 3-Clause, with third-party parts under their own terms (for example FSR4 Injector's LGPL-2.1
+shim); see each repository for its licence and notices. Not affiliated with Valve,
+Lenovo, AYANEO or the Decky Loader team.

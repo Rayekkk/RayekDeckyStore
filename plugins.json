@@ -11,14 +11,14 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
     "created": "2026-09-06T21:38:26Z",
     "updated": "2026-10-26T15:11:12Z",
-    "downloads": 1160,
+    "downloads": 1161,
     "versions": [
       {
         "name": "2.4.0",
         "hash": "b6687593a815db1f28e5611f604a89099b84c0f045d6028b1e9f69ed805f3215",
         "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.4.0/LegionGo2Companion-2.4.0.zip",
         "created": "2026-10-26T15:11:12Z",
-        "downloads": 78
+        "downloads": 79
       },
       {
         "name": "2.3.0",
@@ -222,14 +222,14 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyEQ.png",
     "created": "2026-09-07T19:52:39Z",
     "updated": "2026-10-24T20:28:33Z",
-    "downloads": 54,
+    "downloads": 55,
     "versions": [
       {
         "name": "1.1.0",
         "hash": "1365bd31a97d62371c38c244925bcf2af1fac66b1702b0c608c73055be11b604",
         "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.1.0/DeckyEQ-1.1.0.zip",
         "created": "2026-10-24T20:28:33Z",
-        "downloads": 15
+        "downloads": 16
       },
       {
         "name": "1.0.0",
@@ -289,14 +289,14 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/FSR4Injector.png",
     "created": "2026-10-25T02:14:06Z",
     "updated": "2026-10-25T02:14:06Z",
-    "downloads": 316,
+    "downloads": 320,
     "versions": [
       {
         "name": "1.0.0",
         "hash": "827f4e1d3969b261cbc0c883eb31aeab759fa34c3de0b84dbef2977581ef7e76",
         "artifact": "https://github.com/Rayekkk/FSR4Injector/releases/download/1.0.0/FSR4Injector-1.0.0.zip",
         "created": "2026-10-25T02:14:06Z",
-        "downloads": 316
+        "downloads": 320
       }
     ]
   }

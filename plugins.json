@@ -9,61 +9,86 @@
       "hardware"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
+    "created": "2026-09-06T21:38:26Z",
+    "updated": "2026-10-26T15:11:12Z",
+    "downloads": 1160,
     "versions": [
       {
         "name": "2.4.0",
         "hash": "b6687593a815db1f28e5611f604a89099b84c0f045d6028b1e9f69ed805f3215",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.4.0/LegionGo2Companion-2.4.0.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.4.0/LegionGo2Companion-2.4.0.zip",
+        "created": "2026-10-26T15:11:12Z",
+        "downloads": 78
       },
       {
         "name": "2.3.0",
         "hash": "08cf606d7ced0bd9f51ec67cfd28b716d282325d1d7ab0efd4c58df9274e2d4c",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.3.0/LegionGo2Companion-2.3.0.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.3.0/LegionGo2Companion-2.3.0.zip",
+        "created": "2026-10-22T14:16:25Z",
+        "downloads": 124
       },
       {
         "name": "2.2.1",
         "hash": "6a4a996476bbc67496c6918612b994d4c887219abd59df540180b38a4a226f1b",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.2.1/LegionGo2Companion-2.2.1.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.2.1/LegionGo2Companion-2.2.1.zip",
+        "created": "2026-10-19T22:08:00Z",
+        "downloads": 85
       },
       {
         "name": "2.2.0",
         "hash": "95ab39925f6a2866557ec02a0270dfd962cf6eb3d45005af7429e1f109bcca89",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.2.0/LegionGo2Companion-2.2.0.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.2.0/LegionGo2Companion-2.2.0.zip",
+        "created": "2026-10-18T19:50:06Z",
+        "downloads": 64
       },
       {
         "name": "2.1.0",
         "hash": "c0e96b7208f749e2ace94f3c4174e590649c2b6f57abf752fddef92089ce60d1",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.1.0/LegionGo2Companion-2.1.0.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.1.0/LegionGo2Companion-2.1.0.zip",
+        "created": "2026-10-11T18:41:56Z",
+        "downloads": 193
       },
       {
         "name": "2.0.0",
         "hash": "a50ff243726039643a86c866b0d0cb095e4c2e8978af131e31070fbb8df674a1",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.0.0/LegionGo2Companion-2.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.0.0/LegionGo2Companion-2.0.0.zip",
+        "created": "2026-10-10T20:47:26Z",
+        "downloads": 58
       },
       {
         "name": "1.0.4",
         "hash": "266e7714c1483b24c799d634aec655559c558322da859003aab5db4bfe3aef82",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.4/LegionGo2Companion-1.0.4.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.4/LegionGo2Companion-1.0.4.zip",
+        "created": "2026-09-23T21:47:04Z",
+        "downloads": 195
       },
       {
         "name": "1.0.3",
         "hash": "a6803d1d8e8f36b913214f56e6c7fa70d29362de0757436f03db6bdd6bd82bec",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.3/LegionGo2Companion-1.0.3.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.3/LegionGo2Companion-1.0.3.zip",
+        "created": "2026-09-18T18:11:12Z",
+        "downloads": 101
       },
       {
         "name": "1.0.2",
         "hash": "8744b46c1b4404365c09337c25b9e41a6bbf748af31f01161331f71adb37ad83",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.2/LegionGo2Companion-1.0.2.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.2/LegionGo2Companion-1.0.2.zip",
+        "created": "2026-09-14T15:55:19Z",
+        "downloads": 84
       },
       {
         "name": "1.0.1",
         "hash": "e6a0eadc31ff0f6657647653b31a2b76082a44d254d1f9cabf69c78eb9dcd4a7",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.1/LegionGo2Companion-1.0.1.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.1/LegionGo2Companion-1.0.1.zip",
+        "created": "2026-09-09T14:04:47Z",
+        "downloads": 103
       },
       {
         "name": "1.0.0",
         "hash": "dff56d297c9b5f066bd13c1f55f611e9b6353bf6a0ccccb07bbc93db7a683b21",
-        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.0/LegionGo2Companion-1.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/1.0.0/LegionGo2Companion-1.0.0.zip",
+        "created": "2026-09-06T21:38:26Z",
+        "downloads": 75
       }
     ]
   },
@@ -78,36 +103,51 @@
       "performance"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/Ayaneo3Companion.png",
+    "created": "2026-08-23T20:51:35Z",
+    "updated": "2026-10-24T12:24:55Z",
+    "downloads": 93,
     "versions": [
       {
         "name": "1.3.0",
         "hash": "d52e25dc10c1220270d4b60eb70ce14326c88ad21170f8ddfa4331502b6a9644",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.3.0/Ayaneo3Companion-1.3.0.zip"
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.3.0/Ayaneo3Companion-1.3.0.zip",
+        "created": "2026-10-24T12:24:55Z",
+        "downloads": 2
       },
       {
         "name": "1.2.0",
         "hash": "b1c9a5529b3f5a4dee88ca275d285bb6347092a5f7e90db07b87b24725b4f651",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.2.0/Ayaneo3Companion-1.2.0.zip"
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.2.0/Ayaneo3Companion-1.2.0.zip",
+        "created": "2026-10-10T14:23:34Z",
+        "downloads": 41
       },
       {
         "name": "1.1.0",
         "hash": "92815351d662fad2168f9eb7f60d8e22e6d3b33addd4aee37ae2fdb47450f2bf",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.1.0/Ayaneo3Companion-1.1.0.zip"
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.1.0/Ayaneo3Companion-1.1.0.zip",
+        "created": "2026-09-06T00:25:44Z",
+        "downloads": 20
       },
       {
         "name": "1.0.2",
         "hash": "6cc2ad2f92bbf36a719c7d29cabf6957395ee191d135d3d7a5a1546b33e7fa4e",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.2/Ayaneo3Companion-1.0.2.zip"
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.2/Ayaneo3Companion-1.0.2.zip",
+        "created": "2026-08-25T17:19:01Z",
+        "downloads": 19
       },
       {
         "name": "1.0.1",
         "hash": "32257a2919c5eb9253b2247e0cc2c8099793263d43449dc99d82bf04c0c6e290",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.1/Ayaneo3Companion-1.0.1.zip"
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.1/Ayaneo3Companion-1.0.1.zip",
+        "created": "2026-08-24T19:49:16Z",
+        "downloads": 7
       },
       {
         "name": "1.0.0",
         "hash": "37c7a98b219bc00cfdc6d40f9886ab183a308fad76e1d652f198e964cf10c30a",
-        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.0/Ayaneo3Companion-1.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/Ayaneo3Companion/releases/download/1.0.0/Ayaneo3Companion-1.0.0.zip",
+        "created": "2026-08-23T20:51:35Z",
+        "downloads": 4
       }
     ]
   },
@@ -122,36 +162,51 @@
       "color"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyVibranceHDR.png",
+    "created": "2026-07-28T20:41:10Z",
+    "updated": "2026-10-21T16:43:46Z",
+    "downloads": 1744,
     "versions": [
       {
         "name": "1.2.0",
         "hash": "e92c3b9580e9e0a604487570902dda588d803845152787d121a60bf8fe233dd5",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.2.0/DeckyVibranceHDR-1.2.0.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.2.0/DeckyVibranceHDR-1.2.0.zip",
+        "created": "2026-10-21T16:43:46Z",
+        "downloads": 117
       },
       {
         "name": "1.1.1",
         "hash": "bd3ccf13afa69d81e56e6d17ebf9e9e83f3b76daeae13c4c691757c343c3c5ea",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.1.1/DeckyVibranceHDR-1.1.1.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.1.1/DeckyVibranceHDR-1.1.1.zip",
+        "created": "2026-10-10T23:32:41Z",
+        "downloads": 167
       },
       {
         "name": "1.1.0",
         "hash": "3b8576406a46906f9a0c3451abd80f9a7cd8cde09a438959e2a43404446ce509",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.1.0/DeckyVibranceHDR-1.1.0.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.1.0/DeckyVibranceHDR-1.1.0.zip",
+        "created": "2026-10-10T14:16:38Z",
+        "downloads": 76
       },
       {
         "name": "1.0.2",
         "hash": "55ed340fb6dac45bc8d192611ce2ca33150e0cbce902eef7e9001438843f61e0",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.2/DeckyVibranceHDR-1.0.2.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.2/DeckyVibranceHDR-1.0.2.zip",
+        "created": "2026-09-14T16:37:48Z",
+        "downloads": 379
       },
       {
         "name": "1.0.1",
         "hash": "8bbf5601ea5b9e9865329773f05e7a9a8e8496303a6bb447a7da5a00c61407de",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.1/DeckyVibranceHDR-1.0.1.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.1/DeckyVibranceHDR-1.0.1.zip",
+        "created": "2026-08-09T16:35:39Z",
+        "downloads": 577
       },
       {
         "name": "1.0.0",
         "hash": "c5fbde7be36a9212b85b8db87e495217b174b617a433385bd43ffec5a9aef159",
-        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.0/DeckyVibranceHDR-1.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyVibranceHDR/releases/download/1.0.0/DeckyVibranceHDR-1.0.0.zip",
+        "created": "2026-07-28T20:41:10Z",
+        "downloads": 428
       }
     ]
   },
@@ -165,16 +220,23 @@
       "utilities"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyEQ.png",
+    "created": "2026-09-07T19:52:39Z",
+    "updated": "2026-10-24T20:28:33Z",
+    "downloads": 54,
     "versions": [
       {
         "name": "1.1.0",
         "hash": "1365bd31a97d62371c38c244925bcf2af1fac66b1702b0c608c73055be11b604",
-        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.1.0/DeckyEQ-1.1.0.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.1.0/DeckyEQ-1.1.0.zip",
+        "created": "2026-10-24T20:28:33Z",
+        "downloads": 15
       },
       {
         "name": "1.0.0",
         "hash": "c52f87851328bd95915707c1cc931b75601db3d0588231a26f17d9898f02486c",
-        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.0.0/DeckyEQ-1.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/DeckyEQ/releases/download/1.0.0/DeckyEQ-1.0.0.zip",
+        "created": "2026-09-07T19:52:39Z",
+        "downloads": 39
       }
     ]
   },
@@ -188,21 +250,30 @@
       "spotify"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/SpotiDeck.png",
+    "created": "2026-09-06T21:21:23Z",
+    "updated": "2026-09-15T17:29:39Z",
+    "downloads": 51,
     "versions": [
       {
         "name": "1.1.1",
         "hash": "0ececbeb51a51e9839a131248a592db35ad426ebb3c14a95722de348fe3f467f",
-        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.1.1/SpotiDeck-1.1.1.zip"
+        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.1.1/SpotiDeck-1.1.1.zip",
+        "created": "2026-09-15T17:29:39Z",
+        "downloads": 33
       },
       {
         "name": "1.1.0",
         "hash": "08b53199dfa295542866151aea3acc68e9a3141654d7001221e71efd56611c56",
-        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.1.0/SpotiDeck-1.1.0.zip"
+        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.1.0/SpotiDeck-1.1.0.zip",
+        "created": "2026-09-07T17:14:52Z",
+        "downloads": 13
       },
       {
         "name": "1.0.0",
         "hash": "1ff8241b272da3f0a0f2bb8d39a5c78e5a925a5da811e6f536aeac3de440fc90",
-        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.0.0/SpotiDeck-1.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/SpotiDeck/releases/download/1.0.0/SpotiDeck-1.0.0.zip",
+        "created": "2026-09-06T21:21:23Z",
+        "downloads": 5
       }
     ]
   },
@@ -216,11 +287,16 @@
       "graphics"
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/FSR4Injector.png",
+    "created": "2026-10-25T02:14:06Z",
+    "updated": "2026-10-25T02:14:06Z",
+    "downloads": 316,
     "versions": [
       {
         "name": "1.0.0",
         "hash": "827f4e1d3969b261cbc0c883eb31aeab759fa34c3de0b84dbef2977581ef7e76",
-        "artifact": "https://github.com/Rayekkk/FSR4Injector/releases/download/1.0.0/FSR4Injector-1.0.0.zip"
+        "artifact": "https://github.com/Rayekkk/FSR4Injector/releases/download/1.0.0/FSR4Injector-1.0.0.zip",
+        "created": "2026-10-25T02:14:06Z",
+        "downloads": 316
       }
     ]
   }

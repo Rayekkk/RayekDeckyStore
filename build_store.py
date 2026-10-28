@@ -1,8 +1,10 @@
 """Rebuild plugins.json from the plugin repositories.
 
 Decky's frontend fetches whatever URL is configured and parses the body as
-StorePlugin[] (frontend/src/store.tsx). Everything it needs is in that array,
-so this store is a static file and there is no API to implement.
+StorePlugin[] (frontend/src/store.tsx). Everything it needs is in that array;
+worker.js serves it, answers /versions and sorts it (sort_by=name|date|downloads)
+from the created/updated/downloads fields written here, as the official store does.
+Download counts are as of the last run of this script.
 
 Every published release is listed, not just the newest, because PluginCard.tsx
 builds its version dropdown straight from the versions array and marks the one
@@ -45,7 +47,8 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plugins.json")
 
 
 def gh_json(path):
-    raw = subprocess.run(["gh", "api", path], capture_output=True, text=True, check=True).stdout
+    # gh writes UTF-8; the Windows default code page fails on release notes and leaves stdout None.
+    raw = subprocess.run(["gh", "api", path], capture_output=True, text=True, encoding="utf-8", check=True).stdout
     return json.loads(raw)
 
 
@@ -105,7 +108,8 @@ for repo, plugin_id in REPOS:
             if expected and expected != "sha256:" + digest:
                 raise ValueError("SHA-256 mismatch: " + url)
             fetched += 1
-        versions.append({"name": tag, "hash": digest, "artifact": url})
+        versions.append({"name": tag, "hash": digest, "artifact": url,
+                         "created": rel["published_at"], "downloads": asset["download_count"]})
 
     if not versions:
         print("POMINIETE %s: zadne wydanie nie ma pliku" % repo)
@@ -123,6 +127,10 @@ for repo, plugin_id in REPOS:
         "description": DESCRIPTION_OVERRIDES.get(repo, pub.get("description", "")),
         "tags": TAG_OVERRIDES.get(repo, pub.get("tags", ["utilities", "hardware"])),
         "image_url": "https://raw.githubusercontent.com/%s/RayekDeckyStore/main/assets/%s.png" % (OWNER, repo),
+        # Sort keys for worker.js, same meaning as the official store: date sorts by created.
+        "created": min(v["created"] for v in versions),
+        "updated": max(v["created"] for v in versions),
+        "downloads": sum(v["downloads"] for v in versions),
         "versions": versions,
     })
 

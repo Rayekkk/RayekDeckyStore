@@ -168,6 +168,10 @@ It also answers `/versions`, which Decky 3.3.1 calls to check installed plugins 
 `{"Plugin name": ["newest version", "sha256"]}` built from the same `plugins.json`, the shape the official store
 uses. Without it Decky rejects the answer and never offers an update.
 
+Sorting is the store's job too: the Store tab asks for `?sort_by=name|date|downloads&sort_direction=asc|desc`,
+and the worker sorts by the `created` and `downloads` fields `build_store.py` writes (date means the plugin's first
+release, as in the official store). Download counts are as of the last run of `build_store.py`.
+
 The worker reads whatever `plugins.json` currently says, so a plugin release never needs it redeployed; only a
 change to `worker.js` itself does. `node --test worker.test.mjs` checks it against this repository's `plugins.json`.
 

@@ -53,12 +53,34 @@ export default {
     }
 
     const headers = { ...CORS, 'Content-Type': 'application/json; charset=utf-8' };
-    if (new URL(request.url).pathname.replace(/\/+$/, '').endsWith('/versions')) {
+    const url = new URL(request.url);
+    if (url.pathname.replace(/\/+$/, '').endsWith('/versions')) {
       return new Response(JSON.stringify(versionMap(await upstream.json())), { status: 200, headers });
+    }
+    const sortBy = url.searchParams.get('sort_by');
+    if (sortBy) {
+      const sorted = sortPlugins(await upstream.json(), sortBy, url.searchParams.get('sort_direction'));
+      return new Response(JSON.stringify(sorted), { status: 200, headers });
     }
     return new Response(upstream.body, { status: 200, headers });
   },
 };
+
+// Decky's Store menu leaves sorting to the store: sort_by=name|date|downloads,
+// sort_direction=asc|desc. "date" is the plugin's first release (created), as in
+// the official store. An unknown key keeps the plugins.json order.
+const SORT_KEYS = {
+  name: (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }),
+  date: (a, b) => String(a.created ?? '').localeCompare(String(b.created ?? '')),
+  downloads: (a, b) => (a.downloads ?? 0) - (b.downloads ?? 0),
+};
+
+export function sortPlugins(plugins, sortBy, direction) {
+  const compare = SORT_KEYS[sortBy];
+  if (!compare) return plugins;
+  const sign = direction === 'desc' ? -1 : 1;
+  return [...plugins].sort((a, b) => sign * compare(a, b));
+}
 
 export function versionMap(plugins) {
   const map = {};

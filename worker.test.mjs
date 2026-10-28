@@ -19,9 +19,36 @@ test('/versions is the name -> [newest version, sha256] map Decky 3.3.1 expects'
   }
 });
 
-test('the plugin list, with or without a query, is passed through unchanged', async () => {
-  for (const path of ['', '/', '/?sort_by=name&sort_direction=asc']) {
+test('the plugin list without a sort is passed through unchanged', async () => {
+  for (const path of ['', '/', '/?sort_by=unknown']) {
     assert.deepEqual(await (await get(path)).json(), plugins);
+  }
+});
+
+test("every option of Decky's Store sort menu orders the list", async () => {
+  const names = async (q) => (await (await get('/?' + q)).json()).map((p) => p.name);
+  const sample = [
+    { name: 'beta', created: '2026-01-02T00:00:00Z', downloads: 5 },
+    { name: 'Alpha', created: '2026-03-01T00:00:00Z', downloads: 50 },
+    { name: 'gamma', created: '2025-12-01T00:00:00Z', downloads: 1 },
+  ];
+  globalThis.fetch = async () => new Response(JSON.stringify(sample), { status: 200 });
+  try {
+    assert.deepEqual(await names('sort_by=name&sort_direction=asc'), ['Alpha', 'beta', 'gamma']);
+    assert.deepEqual(await names('sort_by=name&sort_direction=desc'), ['gamma', 'beta', 'Alpha']);
+    assert.deepEqual(await names('sort_by=date&sort_direction=asc'), ['gamma', 'beta', 'Alpha']);
+    assert.deepEqual(await names('sort_by=date&sort_direction=desc'), ['Alpha', 'beta', 'gamma']);
+    assert.deepEqual(await names('sort_by=downloads&sort_direction=desc'), ['Alpha', 'beta', 'gamma']);
+    assert.deepEqual(await names('sort_by=downloads&sort_direction=asc'), ['gamma', 'beta', 'Alpha']);
+  } finally {
+    globalThis.fetch = async () => new Response(JSON.stringify(plugins), { status: 200 });
+  }
+});
+
+test('the real catalog carries the fields the sort needs', () => {
+  for (const p of plugins) {
+    assert.match(p.created, /^\d{4}-\d\d-\d\dT/, p.name);
+    assert.ok(Number.isInteger(p.downloads), p.name);
   }
 });
 

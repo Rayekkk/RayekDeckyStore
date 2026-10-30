@@ -142,8 +142,9 @@ of plugins, and downloads each zip straight from its own GitHub release.
 
 `build_store.py` regenerates the file. It reads `plugin.json` from each plugin repo on GitHub for the
 name, author, description and tags, lists published stable releases, and hashes each new
-published zip so Decky can verify what it downloaded. Run it after a release and commit the
-result. Store artwork is kept in `assets/` and plugin IDs stay stable. Draft and prerelease versions are excluded. **The address never changes.**
+published zip so Decky can verify what it downloaded. Every version already in the store stays: if one disappears
+from GitHub, the script stops and leaves `plugins.json` as it is (to retire a version, delete it from
+`plugins.json` by hand). Store artwork is kept in `assets/` and plugin IDs stay stable. Draft and prerelease versions are excluded. **The address never changes.**
 
 ```bash
 python build_store.py
@@ -153,9 +154,10 @@ git commit -am "Refresh the store" && git push
 The file is served by GitHub Pages from `main`, and `worker.js` fronts it at the address
 above. A push takes a minute or so to appear.
 
-The same rebuild also runs by itself every Monday (`.github/workflows/refresh-store.yml`): new releases reach the
-store and the download counts stay fresh, and a commit is made only when `plugins.json` changed. Run it at any time
-from **Actions → Refresh store → Run workflow**.
+The rebuild runs by itself every hour (`.github/workflows/refresh-store.yml`), so a new release reaches the store
+within about an hour without any manual step. The hourly run commits only when a new version appeared; fresh
+download counts are committed on the Monday run. Run it at any time from **Actions → Refresh store → Run workflow**
+(that run also commits download counts).
 
 <details>
 <summary><b>Why a worker in front of GitHub Pages</b></summary>

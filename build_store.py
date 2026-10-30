@@ -24,6 +24,7 @@ import hashlib
 import json
 import os
 import subprocess
+import sys
 import urllib.request
 
 OWNER = "Rayekkk"
@@ -70,77 +71,101 @@ def known_hashes():
         return {}
 
 
-cache = known_hashes()
-store = []
-fetched = 0
+def changes(old_keys, store):
+    """(added, removed) lists of "Plugin version" between the previous catalog's (name, version, artifact) keys and
+    the new store."""
+    old = {(name, version) for name, version, _ in old_keys}
+    new = {(p["name"], v["name"]) for p in store for v in p["versions"]}
+    label = lambda keys: ["%s %s" % key for key in sorted(keys)]
+    return label(new - old), label(old - new)
 
-for repo, plugin_id in REPOS:
-    content = gh_json("repos/%s/%s/contents/plugin.json?ref=main" % (OWNER, repo))
-    pj = json.loads(base64.b64decode(content["content"]))
-    pub = pj.get("publish", {})
-    name = pj["name"]
 
-    releases = [r for r in gh_json("repos/%s/%s/releases?per_page=100" % (OWNER, repo))
-                if not r["draft"] and not r["prerelease"] and r["assets"]]
-    releases.sort(key=lambda r: semver(r["tag_name"]), reverse=True)
+def main():
+    cache = known_hashes()
+    store = []
+    fetched = 0
 
-    versions = []
-    for rel in releases:
-        tag = rel["tag_name"].lstrip("vV")
-        # Checksums and source archives must never become install targets.
-        filename = "%s-%s.zip" % (repo, tag)
-        assets = [a for a in rel["assets"]
-                  if a["name"] == filename or (
-                      a["name"].lower().endswith(".zip")
-                      and (name, tag, a["browser_download_url"]) in cache)]
-        if len(assets) != 1:
-            print("POMINIETE %s %s: brak jednoznacznej paczki %s" % (repo, tag, filename))
+    for repo, plugin_id in REPOS:
+        content = gh_json("repos/%s/%s/contents/plugin.json?ref=main" % (OWNER, repo))
+        pj = json.loads(base64.b64decode(content["content"]))
+        pub = pj.get("publish", {})
+        name = pj["name"]
+
+        releases = [r for r in gh_json("repos/%s/%s/releases?per_page=100" % (OWNER, repo))
+                    if not r["draft"] and not r["prerelease"] and r["assets"]]
+        releases.sort(key=lambda r: semver(r["tag_name"]), reverse=True)
+
+        versions = []
+        for rel in releases:
+            tag = rel["tag_name"].lstrip("vV")
+            # Checksums and source archives must never become install targets.
+            filename = "%s-%s.zip" % (repo, tag)
+            assets = [a for a in rel["assets"]
+                      if a["name"] == filename or (
+                          a["name"].lower().endswith(".zip")
+                          and (name, tag, a["browser_download_url"]) in cache)]
+            if len(assets) != 1:
+                print("POMINIETE %s %s: brak jednoznacznej paczki %s" % (repo, tag, filename))
+                continue
+            asset = assets[0]
+            url = asset["browser_download_url"]
+            digest = cache.get((name, tag, url))
+            expected = asset.get("digest")
+            if digest is not None and expected and expected != "sha256:" + digest:
+                digest = None
+            if digest is None:
+                with urllib.request.urlopen(url) as fh:
+                    digest = hashlib.sha256(fh.read()).hexdigest()
+                if expected and expected != "sha256:" + digest:
+                    raise ValueError("SHA-256 mismatch: " + url)
+                fetched += 1
+            versions.append({"name": tag, "hash": digest, "artifact": url,
+                             "created": rel["published_at"], "downloads": asset["download_count"]})
+
+        if not versions:
+            print("POMINIETE %s: zadne wydanie nie ma pliku" % repo)
             continue
-        asset = assets[0]
-        url = asset["browser_download_url"]
-        digest = cache.get((name, tag, url))
-        expected = asset.get("digest")
-        if digest is not None and expected and expected != "sha256:" + digest:
-            digest = None
-        if digest is None:
-            with urllib.request.urlopen(url) as fh:
-                digest = hashlib.sha256(fh.read()).hexdigest()
-            if expected and expected != "sha256:" + digest:
-                raise ValueError("SHA-256 mismatch: " + url)
-            fetched += 1
-        versions.append({"name": tag, "hash": digest, "artifact": url,
-                         "created": rel["published_at"], "downloads": asset["download_count"]})
+        if versions[0]["name"] != pj["version"]:
+            print("UWAGA %s: plugin.json ma %s, najnowsze wydanie %s"
+                  % (repo, pj["version"], versions[0]["name"]))
 
-    if not versions:
-        print("POMINIETE %s: zadne wydanie nie ma pliku" % repo)
-        continue
-    if versions[0]["name"] != pj["version"]:
-        print("UWAGA %s: plugin.json ma %s, najnowsze wydanie %s"
-              % (repo, pj["version"], versions[0]["name"]))
+        store.append({
+            "id": plugin_id,
+            # Must match plugin.json exactly: this is the key Decky matches an
+            # installed plugin against when it looks for a store entry.
+            "name": name,
+            "author": pj.get("author", ""),
+            "description": DESCRIPTION_OVERRIDES.get(repo, pub.get("description", "")),
+            "tags": TAG_OVERRIDES.get(repo, pub.get("tags", ["utilities", "hardware"])),
+            "image_url": "https://raw.githubusercontent.com/%s/RayekDeckyStore/main/assets/%s.png" % (OWNER, repo),
+            # Sort keys for worker.js, same meaning as the official store: date sorts by created.
+            "created": min(v["created"] for v in versions),
+            "updated": max(v["created"] for v in versions),
+            "downloads": sum(v["downloads"] for v in versions),
+            "versions": versions,
+        })
 
-    store.append({
-        "id": plugin_id,
-        # Must match plugin.json exactly: this is the key Decky matches an
-        # installed plugin against when it looks for a store entry.
-        "name": name,
-        "author": pj.get("author", ""),
-        "description": DESCRIPTION_OVERRIDES.get(repo, pub.get("description", "")),
-        "tags": TAG_OVERRIDES.get(repo, pub.get("tags", ["utilities", "hardware"])),
-        "image_url": "https://raw.githubusercontent.com/%s/RayekDeckyStore/main/assets/%s.png" % (OWNER, repo),
-        # Sort keys for worker.js, same meaning as the official store: date sorts by created.
-        "created": min(v["created"] for v in versions),
-        "updated": max(v["created"] for v in versions),
-        "downloads": sum(v["downloads"] for v in versions),
-        "versions": versions,
-    })
+    added, removed = changes(cache, store)
+    if removed:
+        # Never drop a version people may have installed: a GitHub hiccup or a renamed asset must not shrink the
+        # store. To retire a version on purpose, delete it from plugins.json by hand first.
+        sys.exit("ZNIKNELO ze sklepu, plugins.json bez zmian: " + ", ".join(removed))
+    with open(OUT, "w", encoding="utf-8") as fh:
+        json.dump(store, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    if added:
+        print("NOWE: " + ", ".join(added))
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+            fh.write("added=%s\n" % ", ".join(added))
 
-with open(OUT, "w", encoding="utf-8") as fh:
-    json.dump(store, fh, indent=2, ensure_ascii=False)
-    fh.write("\n")
+    for p in store:
+        print("%d. %-22s %2d wersji, najnowsza %-7s opis %3d znakow  obrazek: %s" % (
+            p["id"], p["name"], len(p["versions"]), p["versions"][0]["name"],
+            len(p["description"]), "jest" if p["image_url"] else "brak"))
+    print("\npobrano %d nowych archiwow, %d hashy wzietych z poprzedniego pliku" % (fetched, len(cache)))
+    print("zapisano: %s (%d B)" % (OUT, os.path.getsize(OUT)))
 
-for p in store:
-    print("%d. %-22s %2d wersji, najnowsza %-7s opis %3d znakow  obrazek: %s" % (
-        p["id"], p["name"], len(p["versions"]), p["versions"][0]["name"],
-        len(p["description"]), "jest" if p["image_url"] else "brak"))
-print("\npobrano %d nowych archiwow, %d hashy wzietych z poprzedniego pliku" % (fetched, len(cache)))
-print("zapisano: %s (%d B)" % (OUT, os.path.getsize(OUT)))
+
+if __name__ == "__main__":
+    main()

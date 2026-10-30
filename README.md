@@ -135,6 +135,22 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 ---
 
+### DeckyLS
+
+<div align="center">
+
+<a href="https://github.com/Rayekkk/DeckyLS"><img src="assets/DeckyLS.png" alt="DeckyLS" width="640"></a>
+
+[![Release](https://img.shields.io/github/v/release/Rayekkk/DeckyLS?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/DeckyLS/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Rayekkk/DeckyLS/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/DeckyLS/releases)
+[![License](https://img.shields.io/github/license/Rayekkk/DeckyLS?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/DeckyLS/blob/main/LICENSE)
+
+</div>
+
+**[DeckyLS](https://github.com/Rayekkk/DeckyLS)** brings Lossless Scaling frame generation to the game you are playing: one menu in the Quick Access Menu with Off / 2× – 8×, flow scale and performance mode, changed live without launch options. It installs the official, unmodified [lsfg-vk](https://lsfg-vk.dev) 2.0 by PancakeTAS from its author's site and shows whether frame generation really runs. Requires Lossless Scaling bought on Steam and switched to its `lsfg-vk` branch.
+
+---
+
 ## How it works
 
 There is no server. `plugins.json` is the entire store: Decky fetches it, parses it as a list

@@ -10,9 +10,16 @@
     ],
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/LegionGo2Companion.png",
     "created": "2026-09-06T21:38:26Z",
-    "updated": "2026-10-26T15:11:12Z",
+    "updated": "2026-11-03T18:38:24Z",
     "downloads": 1756,
     "versions": [
+      {
+        "name": "2.4.1",
+        "hash": "3cbed2ec9481a037ed86d97b609cabe479ae47e71cfe07bdda4f1bc7a310a269",
+        "artifact": "https://github.com/Rayekkk/LegionGo2Companion/releases/download/2.4.1/LegionGo2Companion-2.4.1.zip",
+        "created": "2026-11-03T18:38:24Z",
+        "downloads": 0
+      },
       {
         "name": "2.4.0",
         "hash": "b6687593a815db1f28e5611f604a89099b84c0f045d6028b1e9f69ed805f3215",
@@ -296,14 +303,14 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/FSR4Injector.png",
     "created": "2026-10-25T02:14:06Z",
     "updated": "2026-11-03T13:59:35Z",
-    "downloads": 1094,
+    "downloads": 1095,
     "versions": [
       {
         "name": "1.2.0",
         "hash": "4b5fa3d000ef7d472b7447f5116bb611faa934a7fdf6c2cafb15070c41afbaa8",
         "artifact": "https://github.com/Rayekkk/FSR4Injector/releases/download/1.2.0/FSR4Injector-1.2.0.zip",
         "created": "2026-11-03T13:59:35Z",
-        "downloads": 30
+        "downloads": 31
       },
       {
         "name": "1.1.0",
@@ -364,14 +371,14 @@
     "image_url": "https://raw.githubusercontent.com/Rayekkk/RayekDeckyStore/main/assets/DeckyReshade.png",
     "created": "2026-11-03T18:08:05Z",
     "updated": "2026-11-03T18:08:05Z",
-    "downloads": 0,
+    "downloads": 3,
     "versions": [
       {
         "name": "1.0.0",
         "hash": "139d2a2b7da114033644278aff4bb49f027b3b562d3bfed8355521ca29ebade5",
         "artifact": "https://github.com/Rayekkk/DeckyReshade/releases/download/1.0.0/DeckyReshade-1.0.0.zip",
         "created": "2026-11-03T18:08:05Z",
-        "downloads": 0
+        "downloads": 3
       }
     ]
   }

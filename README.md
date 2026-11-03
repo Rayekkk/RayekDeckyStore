@@ -151,6 +151,22 @@ Uninstall the overlapping standalone plugins before installing Companion: it pau
 
 ---
 
+### DeckyReshade
+
+<div align="center">
+
+<a href="https://github.com/Rayekkk/DeckyReshade"><img src="assets/DeckyReshade.png" alt="DeckyReshade" width="640"></a>
+
+[![Release](https://img.shields.io/github/v/release/Rayekkk/DeckyReshade?style=for-the-badge&label=release&color=C2410C&labelColor=141417)](https://github.com/Rayekkk/DeckyReshade/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Rayekkk/DeckyReshade/total?style=for-the-badge&label=downloads&color=15803D&labelColor=141417)](https://github.com/Rayekkk/DeckyReshade/releases)
+[![License](https://img.shields.io/github/license/Rayekkk/DeckyReshade?style=for-the-badge&label=license&color=424A53&labelColor=141417)](https://github.com/Rayekkk/DeckyReshade/blob/main/LICENSE)
+
+</div>
+
+**[DeckyReshade](https://github.com/Rayekkk/DeckyReshade)** sets up ReShade for your Steam and non-Steam games from Gaming Mode and keeps it up to date: turn ReShade, AutoHDR or a RenoDX HDR mod on per game from the Quick Access Menu. ReShade, shaders and mods come straight from their authors, no launch options are needed, and every change can be undone.
+
+---
+
 ## How it works
 
 There is no server. `plugins.json` is the entire store: Decky fetches it, parses it as a list
